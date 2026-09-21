@@ -1,0 +1,193 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Academic CV - Ramiro Benítez González
+% LaTeX Source Code
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% --- PREAMBLE ---
+\documentclass[11pt, a4paper]{article}
+
+% --- Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{palatino}     % Palatino font (text)
+\usepackage{mathpazo}     % Palatino font (math)
+\usepackage{amssymb}      % Math symbols
+\usepackage[margin=0.65in, top=0.5in, bottom=0.5in]{geometry}
+\usepackage{hyperref}     % Clickable links
+\usepackage{titlesec}     % Section formatting
+\usepackage{xcolor}       % Colors
+\usepackage{microtype}    % Typography improvements
+\usepackage{etoolbox}     % Logic
+\usepackage{textcomp}     % For \textperiodcentered
+\usepackage{graphicx}     % For images
+\usepackage{enumitem}     % Compact lists
+
+% --- PERSONAL DATA (edit here) ---
+\newcommand{\cvname}{Ramiro Benítez González}
+\newcommand{\cvcity}{Seville, Spain}
+\newcommand{\cvemail}{ramirobg04@gmail.com}
+\newcommand{\cvlinkedin}{ramiro-benitez-gonzalez}
+\newcommand{\cvgithub}{RBenitezGonzalez}
+\newcommand{\cvrepo}{https://github.com/\cvgithub/Academic-Work}
+
+% --- PHOTO SWITCH (CONFIGURATION) ---
+\newbool{showphoto}
+%\setbool{showphoto}{true}  % European layout: needs photo.jpg in this folder
+\setbool{showphoto}{false}  % International layout: text-only
+
+% --- Color & Link Setup ---
+\definecolor{darkblue}{HTML}{000033}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=darkblue,
+	urlcolor=darkblue,
+	citecolor=black,
+}
+
+% --- Section Formatting ---
+\titleformat{\section}
+{\Large\bfseries\scshape\color{darkblue}}
+{}
+{0em}
+{}[\color{darkblue}\titlerule]
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+
+% --- Page Style ---
+\pagestyle{empty}
+\setlist[itemize]{leftmargin=1.2em, itemsep=0pt, parsep=1pt, topsep=1pt}
+
+% --- Custom List Commands ---
+\newcommand{\entry}[2]{\item[] \textbf{#1} \hfill \textit{#2}}
+\newcommand{\separator}{%
+	\vspace{-4mm}
+	\begin{center} \textperiodcentered \quad \textperiodcentered \quad \textperiodcentered \end{center}
+	\vspace{-4.5mm}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% --- DOCUMENT START ---
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+	% --- HEADER LOGIC ---
+	\ifbool{showphoto}{
+		% CV with photo
+		\noindent
+		\begin{minipage}[t]{0.70\textwidth}
+			\vspace{0pt}
+			{\Huge \bfseries \cvname} \\
+			\vspace{2mm}
+
+			\large
+			\begin{tabular}{@{}l}
+				\cvcity \\
+				\href{mailto:\cvemail}{\cvemail} \\
+				\href{https://www.linkedin.com/in/\cvlinkedin}{linkedin.com/in/\cvlinkedin} \\
+				\href{https://github.com/\cvgithub}{github.com/\cvgithub}
+			\end{tabular}
+		\end{minipage}
+		\hfill
+		\begin{minipage}[t]{0.25\textwidth}
+			\vspace{0pt}
+			\raggedleft
+			\setlength{\fboxsep}{0pt}
+			\setlength{\fboxrule}{0.5pt}
+			\fcolorbox{gray!50}{white}{%
+				\includegraphics[width=2.5cm, keepaspectratio]{photo.jpg}%
+			}
+		\end{minipage}
+	}{
+		% Text-only CV
+		\noindent
+		{\Huge \bfseries \cvname} \hfill {\large \cvcity} \\[2mm]
+		\noindent
+		{\small \href{mailto:\cvemail}{\cvemail} \enspace\textperiodcentered\enspace
+		\href{https://www.linkedin.com/in/\cvlinkedin}{linkedin.com/in/\cvlinkedin} \enspace\textperiodcentered\enspace
+		\href{https://github.com/\cvgithub}{github.com/\cvgithub}}
+	}
+	\vspace{1mm}
+
+	% --- EDUCATION ---
+	\section*{Education}
+	\begin{itemize}
+		\entry{B.Sc. in Mathematics}{Sep 2024 -- Jun 2028 (Expected)}
+		\item[] \textit{University of Seville (US), Seville, Spain}
+		\item[] \textbf{Relevant coursework:} Probability Theory (10.0, \textit{Matrícula de Honor}) \textperiodcentered{} Elements of Probability and Statistics (7.9) \textperiodcentered{} Numerical Analysis I \& II \textperiodcentered{} Ordinary Differential Equations \textperiodcentered{} Discrete Mathematics
+		\item[] \textbf{Current year (2026--27):} Statistical Inference \textperiodcentered{} Mathematical Programming \textperiodcentered{} Mathematical Modelling \textperiodcentered{} Linear Models \textperiodcentered{} Cryptography
+	\end{itemize}
+
+	% --- ACADEMIC HONORS & DISTINCTIONS ---
+	\section*{Academic Honors \& Distinctions}
+	\begin{itemize}
+		\entry{``Matrícula de Honor'' (Highest Distinction, max.\ 5\% of students) in Probability Theory}{2026}
+		\entry{Mathematical Olympiad -- Participant, representing La Salle School (Córdoba)}{2020}
+	\end{itemize}
+
+	% --- RESEARCH EXPERIENCE ---
+	\section*{Research Experience}
+
+	% Current project (2026-2027)
+	\begin{itemize}
+		\entry{Undergraduate Researcher (``Alumno Interno'')}{Sep 2026 -- Present}
+		\item[] \textit{Department of Statistics and Operations Research, University of Seville}
+		\item[] \textbf{Project:} Portfolio optimization. Mean-risk models and their LP/MILP formulations, risk measures, and estimation of expected returns and covariances from market data. \href{\cvrepo/tree/main/Projects/Portfolio-Optimization}{\color{darkblue}[View Project]}
+		\item[] \textbf{Supervisors:} Justo Puerto Albandoz and Alberto Torrejón Valenzuela
+	\end{itemize}
+
+	\separator
+
+	% Past project (2026)
+	\begin{itemize}
+		\entry{Research Collaborator}{Jun 2026 -- Sep 2026}
+		\item[] \textit{Institute of Mathematics of the University of Seville (IMUS)}
+		\item[] \textbf{Project:} Storage Location Assignment Problem (slotting) for an automated storage and picking system.
+		\begin{itemize}
+			\item MILP model for joint channel and replenishment-zone assignment (contiguity, three-level inventory, McCormick linearisation).
+			\item Three-phase heuristic in Python for large instances: $O(1)$ cost preprocessing, greedy construction by Cube-per-Order Index and Iterated Local Search with ruin-and-recreate.
+			\item Technical report in \LaTeX{} and presentation of the algorithm to the research team.
+		\end{itemize}
+		\item[] \textbf{Supervisor:} Alberto Torrejón Valenzuela
+	\end{itemize}
+
+	% --- RESEARCH INTERESTS ---
+	\section*{Research Interests}
+	\begin{itemize}
+		\item[] Operations Research \& Optimization \textperiodcentered{} Quantitative Finance \textperiodcentered{} Probability \& Stochastic Processes
+	\end{itemize}
+
+	% --- INDEPENDENT STUDY ---
+	\section*{Independent Study}
+	\begin{itemize}
+		\item[] \textbf{Mansini et al., \textit{Linear and Mixed Integer Programming for Portfolio Optimization}} (Springer, 2015) and the \textbf{Gurobi Finance} models; reverse-engineered the Gurobi Finance dataset. \href{\cvrepo/tree/main/Python_Tests}{\color{darkblue}[View Notebook]}
+	\end{itemize}
+
+	% --- TEACHING & OTHER EXPERIENCE ---
+	\section*{Teaching \& Other Experience}
+	\begin{itemize}
+		\item[] \textbf{Private Tutor in Mathematics and Physics} (self-employed): university entrance exam preparation.
+		\item[] \textbf{Warehouse Logistics Assistant} (Córdoba): inventory control and storage-space organisation.
+		\item[] \textbf{Volunteer}, Córdoba Food Bank and Adoratrices Association: collection and distribution campaigns.
+	\end{itemize}
+
+	% --- SKILLS ---
+	\section*{Skills}
+	\begin{itemize}
+		\item \textbf{Languages:} Spanish (Native), English (B1, \textit{Cambridge B1 Preliminary})
+		\item \textbf{Programming:} \textbf{Python} (pandas, NumPy, SciPy, Matplotlib), \textbf{Gurobi} (LP, MILP, QP), \textbf{R}, C++ (basic)
+		\item \textbf{Technical:} \textbf{\LaTeX{}} (reports and Beamer), Git \& GitHub, Pandoc
+	\end{itemize}
+
+	% --- REFERENCES ---
+	\section*{References}
+	\begin{itemize}
+		\item[] \textbf{Alberto Torrejón Valenzuela} -- Lecturer, Department of Statistics and Operations Research, University of Seville. Research supervisor (IMUS, 2026; Alumno Interno, 2026--27). \href{mailto:atorrejon@us.es}{atorrejon@us.es}
+	\end{itemize}
+
+	\vfill
+	\begin{center}
+		\textit{Full academic transcript available upon request.}
+	\end{center}
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% --- END OF DOCUMENT ---
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

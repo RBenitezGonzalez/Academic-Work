@@ -1,0 +1,12 @@
+# Gurobi Finance data (downloaded by the notebook, not redistributed)
+Python_Tests/data/
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.out
+*.synctex.gz
