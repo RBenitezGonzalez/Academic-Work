@@ -6,7 +6,7 @@ Welcome to the research directory of my academic portfolio. This folder contains
 
 | Project / Topic | Area | Role | Status |
 | :--- | :--- | :--- | :--- |
-| **[Portfolio Optimization](./Portfolio-Optimization/)** | Quantitative Finance & Operations Research | Alumno Interno | 🚧 In Progress |
+| **[Portfolio Optimization](./Portfolio-Optimization/)** | Quantitative Finance & Operations Research | Alumno Interno (EIO Dept., US) | 🚧 In Progress |
 | **[Warehouse Slotting Optimization](./Warehouse-Slotting-Optimization/)** | Combinatorial Optimization (MILP & Metaheuristics) | Research Collaborator (IMUS) | ✅ Completed |
 | *(Future Project)* | ... | ... | 🔜 Planned |
 
@@ -18,8 +18,8 @@ Welcome to the research directory of my academic portfolio. This folder contains
 **📂 Location:** [`/Portfolio-Optimization`](./Portfolio-Optimization/)
 
 * **Focus:** Mean-risk portfolio selection: the Markowitz model and its extensions, LP-computable risk measures (CVaR, MAD) and mixed-integer models with realistic constraints (cardinality, minimum lots, transaction costs).
-* **Supervisors:** Justo Puerto Albandoz (Head of the Department of Statistics and Operations Research) and Alberto Torrejón Valenzuela.
-* **Context:** Ongoing departmental collaboration ("Alumno Interno"), academic year 2026–27.
+* **Supervisors:** Justo Puerto Albandoz (Head of the Department of Statistics and Operations Research, EIO) and Alberto Torrejón Valenzuela.
+* **Context:** Undergraduate research position ("Alumno Interno") at the Department of Statistics and Operations Research (EIO), University of Seville, since October 2026 (academic year 2026–27).
 * **Companion code:** [`Portfolio_Data_Reconstruction.ipynb`](../Python_Tests/Portfolio_Data_Reconstruction.ipynb).
 
 ### 2. Warehouse Slotting Optimization

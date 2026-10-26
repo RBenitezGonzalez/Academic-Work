@@ -1,11 +1,11 @@
 # Portfolio Optimization: Mean-Risk Models and Mixed-Integer Formulations
 
-This folder documents my ongoing research project on portfolio optimization, carried out as an "Alumno Interno" (Undergraduate Researcher) at the University of Seville.
+This folder documents my ongoing research project on portfolio optimization, carried out as an "Alumno Interno" (Undergraduate Researcher) at the Department of Statistics and Operations Research (EIO) of the University of Seville.
 
 * **Author:** Ramiro Benítez González
 * **Supervisors:** Justo Puerto Albandoz (Head of Department) and Alberto Torrejón Valenzuela
-* **Institution:** University of Seville, Department of Statistics and Operations Research
-* **Date:** September 2026 – Present
+* **Institution:** University of Seville, Department of Statistics and Operations Research (EIO)
+* **Date:** October 2026 – Present
 * **Status:** 🚧 Phase 1 of 3 (foundations)
 
 ---

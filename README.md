@@ -2,6 +2,8 @@
 
 Welcome to my academic portfolio. I am a 3rd-year Mathematics undergraduate at the University of Seville (US), focused on **Operations Research, Mathematical Optimization and Quantitative Finance**, with a strong interest in Probability Theory and Stochastic Processes.
 
+Since **October 2026** I hold an undergraduate research position (*alumno interno*) at the **Department of Statistics and Operations Research (EIO)** of the University of Seville, supervised by Justo Puerto Albandoz and Alberto Torrejón Valenzuela.
+
 This repository contains my research projects, CV source code, and independent study explorations.
 
 ---
@@ -12,9 +14,9 @@ This section contains my formal research and departmental collaborations. You ca
 
 ### ➡️ [Current] [Portfolio Optimization](Projects/Portfolio-Optimization/)
 * **Description:** Mean-risk models for selecting and weighting assets under realistic market constraints, from the classical Markowitz model to LP/MILP formulations of risk measures such as CVaR.
-* **Role:** Undergraduate Researcher ("Alumno Interno").
+* **Role:** Undergraduate Researcher ("Alumno Interno"), appointed October 2026, academic year 2026-27.
 * **Supervisors:** Justo Puerto Albandoz and Alberto Torrejón Valenzuela.
-* **Department:** Statistics and Operations Research (US).
+* **Department:** Statistics and Operations Research (EIO), University of Seville.
 * *(Work in progress)*
 
 ### ➡️ [Project: Warehouse Slotting Optimization](Projects/Warehouse-Slotting-Optimization/)
