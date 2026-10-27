@@ -2,7 +2,7 @@
 
 Welcome to my academic portfolio. I am a 3rd-year Mathematics undergraduate at the University of Seville (US), focused on **Operations Research, Mathematical Optimization and Quantitative Finance**, with a strong interest in Probability Theory and Stochastic Processes.
 
-Since **October 2026** I hold an undergraduate research position (*alumno interno*) at the **Department of Statistics and Operations Research (EIO)** of the University of Seville, supervised by Justo Puerto Albandoz and Alberto Torrejón Valenzuela.
+Since **October 2026** I am a **Research Assistant at the Department of Statistics and Operations Research** of the University of Seville, working on portfolio optimization for the 2026-27 academic year. During the summer of 2026 I collaborated with the Institute of Mathematics of the University of Seville (IMUS) on a warehouse slotting problem. Both projects follow the same line of work: write an operational or financial decision as a mixed-integer linear program, and then make that program solvable at a realistic size.
 
 This repository contains my research projects, CV source code, and independent study explorations.
 
@@ -13,17 +13,17 @@ This repository contains my research projects, CV source code, and independent s
 This section contains my formal research and departmental collaborations. You can browse the full directory of projects here: [📂 View All Projects](Projects/).
 
 ### ➡️ [Current] [Portfolio Optimization](Projects/Portfolio-Optimization/)
-* **Description:** Mean-risk models for selecting and weighting assets under realistic market constraints, from the classical Markowitz model to LP/MILP formulations of risk measures such as CVaR.
-* **Role:** Undergraduate Researcher ("Alumno Interno"), appointed October 2026, academic year 2026-27.
-* **Supervisors:** Justo Puerto Albandoz and Alberto Torrejón Valenzuela.
-* **Department:** Statistics and Operations Research (EIO), University of Seville.
-* *(Work in progress)*
+* **Description:** Portfolio selection beyond the mean-variance model: LP-computable risk measures (mean absolute deviation, semideviation, minimax, Gini's mean difference, CVaR) and the mixed-integer formulations that appear once real market constraints — cardinality, minimum buy-in, minimum lots, transaction costs — are imposed.
+* **Role:** Research Assistant, Department of Statistics and Operations Research, University of Seville.
+* **Tutor:** Justo Puerto Albandoz, Head of the Department. **Supervision:** Alberto Torrejón Valenzuela.
+* **Dates:** October 2026 – present (2026-27 academic year).
+* *(Work in progress. The folder documents the work plan, the formulations and the progress so far.)*
 
-### ➡️ [Project: Warehouse Slotting Optimization](Projects/Warehouse-Slotting-Optimization/)
+### ➡️ [Warehouse Slotting Optimization](Projects/Warehouse-Slotting-Optimization/)
 * **Description:** A Storage Location Assignment Problem (slotting) for an automated storage and picking system, modelled as a mixed-integer linear program and solved at scale with a three-phase heuristic based on Iterated Local Search.
-* **Role:** Research Collaborator.
+* **Role:** Research Collaborator, Institute of Mathematics of the University of Seville (IMUS).
 * **Supervisor:** Alberto Torrejón Valenzuela.
-* **Institution:** Institute of Mathematics of the University of Seville (IMUS).
+* **Dates:** July – September 2026. ✅ Completed.
 * *(Code and data are confidential. The folder describes the problem, the methodology and the skills developed.)*
 
 ---

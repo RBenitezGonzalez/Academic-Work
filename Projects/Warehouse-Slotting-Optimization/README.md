@@ -5,7 +5,7 @@ This folder describes a research collaboration on the **Storage Location Assignm
 * **Author:** Ramiro Benítez González
 * **Supervisor:** Alberto Torrejón Valenzuela
 * **Institution:** Institute of Mathematics of the University of Seville (IMUS)
-* **Date:** June 2026 – September 2026
+* **Date:** July 2026 – September 2026
 * **Status:** ✅ Completed
 
 > **Confidentiality note:** the code, data, report and numerical results of this project are confidential and are not included in this repository. This page describes the problem, the methodology and the skills I developed.
