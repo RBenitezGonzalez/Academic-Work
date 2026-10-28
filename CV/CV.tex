@@ -7,10 +7,10 @@
 \documentclass[11pt, a4paper]{article}
 
 % --- Packages ---
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{palatino}     % Palatino font (text)
 \usepackage{mathpazo}     % Palatino font (math)
+\usepackage{fontspec}     % Palatino font (text), OpenType: the PDF text layer stays parseable
+\setmainfont{texgyrepagella}[Extension=.otf, UprightFont=*-regular, BoldFont=*-bold,
+	ItalicFont=*-italic, BoldItalicFont=*-bolditalic, Ligatures={TeX, NoCommon}]
 \usepackage{amssymb}      % Math symbols
 \usepackage[margin=0.65in, top=0.5in, bottom=0.5in]{geometry}
 \usepackage{hyperref}     % Clickable links
@@ -42,6 +42,8 @@
 	linkcolor=darkblue,
 	urlcolor=darkblue,
 	citecolor=black,
+	pdftitle={Ramiro Benítez González - CV},
+	pdfauthor={Ramiro Benítez González},
 }
 
 % --- Section Formatting ---
@@ -137,7 +139,7 @@
 
 	% Past project (2026)
 	\begin{itemize}
-		\entry{Research Collaborator}{Jul 2026 -- Sep 2026}
+		\entry{Research Collaborator}{Jun 2026 -- Sep 2026}
 		\item[] \textit{Institute of Mathematics of the University of Seville (IMUS)}
 		\item[] \textbf{Project:} Storage Location Assignment Problem (slotting) for an automated storage and picking system.
 		\begin{itemize}

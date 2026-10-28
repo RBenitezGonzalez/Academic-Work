@@ -12,7 +12,7 @@ The source code of my one-page academic Curriculum Vitae: Palatino typography, c
 ## How to Use
 
 1.  Clone the repository or download `CV.tex`.
-2.  Open it in your favourite LaTeX editor (Overleaf, TeXShop, VS Code) and compile it with `pdflatex`.
+2.  Open it in your favourite LaTeX editor (Overleaf, TeXShop, VS Code) and compile it with **XeLaTeX** or **LuaLaTeX** (the source uses `fontspec`, so `pdflatex` will not work). Locally: `tectonic CV.tex`.
 3.  **For the Photo Version:**
     * Place a square/portrait image named `photo.jpg` in the same directory.
     * Set `\setbool{showphoto}{true}` in the preamble.
